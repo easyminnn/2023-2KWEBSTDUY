@@ -3,8 +3,8 @@ const app = express();
 const port = 3000;
 
 app.get('/board/page/:page', (req, res) => {
-    const {page} = req.params;
-    res.send('This is page #${page}!');
+    var {page} = req.params;
+    res.send(`This is page #${page}!`);
 })
 
 

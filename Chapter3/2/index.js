@@ -10,7 +10,7 @@ app.get('/page', (req, res) => {
     const { page, author } = req.query;
     res.render('board.pug', { page, author});
 });
-app.get('/posts', (req, res) => {
+app.get('/posts', (req, res) => {Å
     const {until} = req.query;
     const untilParsed = parseInt(until, 10);
 
